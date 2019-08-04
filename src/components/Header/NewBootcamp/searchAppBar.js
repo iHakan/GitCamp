@@ -10,9 +10,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import { opaqueType } from "@babel/types";
 import { fontFamily } from "@material-ui/system";
-import { MemoryRouter as Router } from "react-router";
-import { Link as RouterLink } from "react-router-dom";
-import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles(theme => ({
   root: {
