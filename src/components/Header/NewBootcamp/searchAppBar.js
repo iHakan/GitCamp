@@ -10,11 +10,12 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import { opaqueType } from "@babel/types";
 import { fontFamily } from "@material-ui/system";
+import FormNBC from "../FormNewBootcamp/formNBC";
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    opacity: 0.8,
+    opacity: 0.75,
     backgroundColor: "#FF9C53",
     borderColor: "#FF9C53",
     boxShadow: "0 0 3px  orange",
@@ -94,17 +95,7 @@ export default function SearchAppBar() {
             />
           </div>
           <div>
-            <Button
-              variant="contained"
-              style={{
-                backgroundColor: "#97A067",
-                opacity: 0.8,
-                color: "white",
-                marginLeft: 25
-              }}
-            >
-              New Bootcamp
-            </Button>
+            <FormNBC />
           </div>
         </Toolbar>
       </AppBar>
