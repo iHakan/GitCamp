@@ -67,24 +67,6 @@ const useStyles = makeStyles(theme => ({
     }
   }
 }));
-/*This section will be added for the links on the navbar! */
-/*const links = [
-  {
-    name1: "Intro",
-
-    name2: "Upcoming Bootcamps",
-
-    name3: "Categories",
-
-    name4: "WhatIsBootcamp",
-
-    name5: "Feedbacks",
-
-    name6: "Locations",
-
-    name7: "Contact"
-  }
-];*/
 
 export default function SearchAppBar() {
   const classes = useStyles();

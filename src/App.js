@@ -10,6 +10,8 @@ function App() {
       <SearchAppBar />
       <Contactus />
       <Footer />
+      {/*Buraya tüm sectionların taglerini oluşturup koyucam ki router çalışsın! */}
+
     </div>
   );
 }
