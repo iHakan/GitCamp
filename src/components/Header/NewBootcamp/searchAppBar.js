@@ -10,12 +10,13 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import { opaqueType } from "@babel/types";
 import { fontFamily } from "@material-ui/system";
-import FormNBC from "../FormNewBootcamp/formNBC";
+import FormNBC from "../Modal/modal";
+import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    opacity: 0.75,
+    opacity: 0.9,
     backgroundColor: "#FF9C53",
     borderColor: "#FF9C53",
     boxShadow: "0 0 3px  orange",
@@ -30,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   },
   search: {
     position: "relative",
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: 25,
     backgroundColor: fade(theme.palette.common.white, 0.15),
     "&:hover": {
       backgroundColor: fade(theme.palette.common.white, 0.25)
@@ -66,6 +67,24 @@ const useStyles = makeStyles(theme => ({
     }
   }
 }));
+/*This section will be added for the links on the navbar! */
+/*const links = [
+  {
+    name1: "Intro",
+
+    name2: "Upcoming Bootcamps",
+
+    name3: "Categories",
+
+    name4: "WhatIsBootcamp",
+
+    name5: "Feedbacks",
+
+    name6: "Locations",
+
+    name7: "Contact"
+  }
+];*/
 
 export default function SearchAppBar() {
   const classes = useStyles();
@@ -80,6 +99,7 @@ export default function SearchAppBar() {
           <Typography className={classes.title} variant="h4" noWrap>
             urBootcamp !
           </Typography>
+
           <div className="sectionLinks" />
           <div className={classes.search}>
             <div className={classes.searchIcon}>
