@@ -29,7 +29,6 @@ class FormNBC extends React.Component {
           variant="contained"
           style={{
             backgroundColor: "#97A067",
-            opacity: 0.8,
             color: "white",
             marginLeft: 25
           }}
@@ -50,11 +49,17 @@ class FormNBC extends React.Component {
           animation="rotate"
         >
           <div style={{ color: "black", opacity: "none" }}>
-            <h4
-              style={{ textDecoration: "underline", color: "rgb(84, 83, 83)" }}
+            <span
+              style={{
+                fontSize: 16,
+                fontStyle: "italic",
+                fontFamily: "Helvetica",
+                fontWeight: "bold",
+                color: "#6C757D"
+              }}
             >
-              Please kindly fill the form to add a New Bootcamp !
-            </h4>
+              **Please kindly fill the form to add a New Bootcamp!**
+            </span>
             <TextFields />
             <br />
             <br />
