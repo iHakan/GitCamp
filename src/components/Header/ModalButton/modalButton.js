@@ -5,7 +5,6 @@ import AddIcon from "@material-ui/icons/Add";
 import Icon from "@material-ui/core/Icon";
 import DeleteIcon from "@material-ui/icons/Delete";
 import NavigationIcon from "@material-ui/icons/Navigation";
-import { mergeClasses } from "@material-ui/styles";
 
 const useStyles = makeStyles(theme => ({
   div: {

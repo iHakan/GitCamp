@@ -15,12 +15,7 @@ import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
-    opacity: 0.9,
-    backgroundColor: "#FF9C53",
-    borderColor: "#FF9C53",
-    boxShadow: "0 0 3px  orange",
-    sticky: "top"
+    flexGrow: 1
   },
   title: {
     flexGrow: 1,
@@ -74,8 +69,12 @@ export default function SearchAppBar() {
   return (
     <div className={classes.root}>
       <AppBar
-        position="static"
-        style={{ backgroundColor: "#FF9C53", borderColor: "#FF9C53" }}
+        position="fixed"
+        style={{
+          opacity: "0.96",
+          backgroundColor: "#fca464",
+          borderColor: "#fca464"
+        }}
       >
         <Toolbar>
           <Typography className={classes.title} variant="h4" noWrap>
