@@ -1,0 +1,91 @@
+{
+  "bootcamps": [
+    {
+      "properties": {
+        "name": "Re:Coded",
+        "logo": "https://pbs.twimg.com/profile_images/1112899034073784320/4mtfe8yM_400x400.png",
+        "catagory": "android",
+        "address": "8720, chemin Russell",
+        "description": "Android App Development Bootcamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.080307, 29.120472]
+      }
+    },
+    {
+      "properties": {
+        "name": "Re:Coded",
+        "logo": "https://pbs.twimg.com/profile_images/1112899034073784320/4mtfe8yM_400x400.png",
+        "address": "8720, chemin Russell",
+        "description": "Front-End Web Development Bootcamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [38.339572, 27.131526]
+      }
+    },
+    {
+      "properties": {
+        "name": "Re:Coded",
+        "logo": "https://pbs.twimg.com/profile_images/1112899034073784320/4mtfe8yM_400x400.png",
+        "address": "8720, chemin Russell",
+        "description": "Front-End Web Development Bootcamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.860426, 32.835405]
+      }
+    },
+    {
+      "properties": {
+        "name": "Re:Coded",
+        "logo": "https://pbs.twimg.com/profile_images/1112899034073784320/4mtfe8yM_400x400.png",
+        "catagory": "ios",
+        "address": "8720, chemin Russell",
+        "description": "Front-End Web Development Bootcamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.921956, 42.237634]
+      }
+    },
+    {
+      "properties": {
+        "name": "Re:Coded",
+        "logo": "https://pbs.twimg.com/profile_images/1112899034073784320/4mtfe8yM_400x400.png",
+        "address": "8720, chemin Russell",
+        "description": "Front-End Web Development Bootcamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.966969, 31.128127]
+      }
+    },
+    {
+      "properties": {
+        "name": "Re:Coded",
+        "logo": "https://pbs.twimg.com/profile_images/1112899034073784320/4mtfe8yM_400x400.png",
+        "catagory": "frontEnd",
+        "address": "8720, chemin Russell",
+        "description": "Front-End Web Development Bootcamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.058218, 37.351984]
+      }
+    },
+    {
+      "properties": {
+        "name": "Re:Coded",
+        "logo": "https://pbs.twimg.com/profile_images/1112899034073784320/4mtfe8yM_400x400.png",
+        "address": "8720, chemin Russell",
+        "description": "Front-End Web Development Bootcamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.733085, 34.267716]
+      }
+    }
+  ]
+}
