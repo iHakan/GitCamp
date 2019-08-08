@@ -71,7 +71,7 @@ export default function SearchAppBar() {
       <AppBar
         position="fixed"
         style={{
-          opacity: "0.96",
+          opacity: "0.998",
           backgroundColor: "#fca464",
           borderColor: "#fca464"
         }}

@@ -57,7 +57,7 @@ export default function TextFields() {
 
     companyLink: "",
 
-    numberOfStudents: ""
+    quota: ""
   });
 
   const handleChange = name => event => {
@@ -136,12 +136,12 @@ export default function TextFields() {
         onChange={handleChange("companyLink")}
         margin="normal"
       />
-      {/*Number of Studenst Section !*/}
+      {/*QUOTA Section !*/}
       <TextField
         id="standard-number"
-        label="Number oF Students"
+        label="Quotation"
         value={values.numberOfStudents}
-        onChange={handleChange("numberOfStudents")}
+        onChange={handleChange("quota")}
         type="number"
         placeholder="How many students ?"
         className={classes.textField}

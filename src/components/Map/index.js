@@ -10,13 +10,8 @@ import * as bootcampData from "./bootcamps.json";
 import mapStyles from "./mapStyles";
 import * as categoryUrl from "./categoryUrl.json";
 
-
-
-
-
 function Map() {
   const [selectedCamp, setSelectedCamp] = useState(null);
-
 
   useEffect(() => {
     const listener = e => {
@@ -38,24 +33,25 @@ function Map() {
       defaultOptions={{ styles: mapStyles }}
     >
       {bootcampData.bootcamps.map(camp => {
-        console.log(categoryUrl.default)
+        console.log(categoryUrl.default);
         return (
-        <Marker
-          position={{
-            lat: camp.geometry.coordinates[0],
-            lng: camp.geometry.coordinates[1]
-          }}
-          onClick={() => {
-            setSelectedCamp(camp);
-          }}
-          icon={{
-            url: categoryUrl.default[camp.properties.catagory],
-            scaledSize: new window.google.maps.Size(50, 50)
-          }}
-        />
-      )})}
+          <Marker
+            position={{
+              lat: camp.geometry.coordinates[0],
+              lng: camp.geometry.coordinates[1]
+            }}
+            onClick={() => {
+              setSelectedCamp(camp);
+            }}
+            icon={{
+              url: categoryUrl.default[camp.properties.catagory],
+              scaledSize: new window.google.maps.Size(50, 50)
+            }}
+          />
+        );
+      })}
 
-      {selectedCamp &&  (
+      {selectedCamp && (
         <InfoWindow
           onCloseClick={() => {
             setSelectedCamp(null);
@@ -80,7 +76,15 @@ const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 export default function App() {
   return (
-    <div style={{ width: "100vw", height: "70vh" }}>
+    <div
+      style={{
+        postion: "absolute",
+        paddigLeft: 0,
+        marginTop: "30%",
+        width: "100%",
+        height: "35vh"
+      }}
+    >
       <MapWrapped
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAGc1xiJdOewKwtysI7MBfk3D77y3n6Yq8`}
         loadingElement={<div style={{ height: `100%` }} />}
