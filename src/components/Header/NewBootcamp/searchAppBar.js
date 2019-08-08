@@ -78,7 +78,12 @@ export default function SearchAppBar() {
         }}
       >
         <Toolbar>
-          <Typography className={classes.title} variant="h4" noWrap>
+          <Typography
+            style={{ textAlign: "left" }}
+            className={classes.title}
+            variant="h4"
+            noWrap
+          >
             urBootcamp !
           </Typography>
 
