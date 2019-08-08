@@ -20,7 +20,6 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
-    display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block"
     }
@@ -78,7 +77,12 @@ export default function SearchAppBar() {
         }}
       >
         <Toolbar>
-          <Typography className={classes.title} variant="h4" noWrap>
+          <Typography
+            style={{ textAlign: "left" }}
+            className={classes.title}
+            variant="h4"
+            noWrap
+          >
             urBootcamp !
           </Typography>
 
