@@ -14,6 +14,7 @@ import FormNBC from "../Modal/modal";
 import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles(theme => ({
+  toolbar: theme.mixins.toolbar,
   root: {
     flexGrow: 1
   },
@@ -100,6 +101,7 @@ export default function SearchAppBar() {
           </div>
         </Toolbar>
       </AppBar>
+      <div className={classes.toolbar} />
     </div>
   );
 }
