@@ -58,6 +58,7 @@ class News extends React.Component {
   render() {
     var newsTemplate;
     var settings = {
+      autoplay: true,
       dots: true,
       infinite: true,
       slidesToShow: 3,

@@ -78,9 +78,7 @@ export default function App() {
   return (
     <div
       style={{
-        postion: "absolute",
         paddigLeft: 0,
-        marginTop: "30%",
         width: "100%",
         height: "35vh"
       }}
