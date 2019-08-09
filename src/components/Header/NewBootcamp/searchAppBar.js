@@ -73,8 +73,8 @@ export default function SearchAppBar() {
         position="fixed"
         style={{
           opacity: "0.998",
-          backgroundColor: "#fca464",
-          borderColor: "#fca464"
+          backgroundColor: "#565656",
+          borderColor: "#565656"
         }}
       >
         <Toolbar>

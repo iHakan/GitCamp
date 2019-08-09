@@ -89,14 +89,14 @@ export default function App() {
       <Typography
         style={{
           paddingTop: 100,
-          paddingBottom: 100,
+          paddingBottom: 50,
           textAlign: "left",
           fontWeight: "bold",
           color: "rgb(179, 179, 179)"
         }}
         variant="h3"
       >
-        Up Coming Bootcamps
+        Location
       </Typography>
       <MapWrapped
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAGc1xiJdOewKwtysI7MBfk3D77y3n6Yq8`}

@@ -55,7 +55,7 @@ export default function AutoGrid() {
       <Typography
         style={{
           paddingTop: 100,
-          paddingBottom: 50,
+          paddingBottom: 25,
           textAlign: "left",
           fontWeight: "bold",
           color: "rgb(179, 179, 179)"
@@ -75,8 +75,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>Front-End Development</h1>
-              <p>
+              <h1 className="header-categories">Front-End Development</h1>
+              <p className="text-categories">
                 Front-End development, is generally based on HTML/CSS and
                 JavaScript program languages.
               </p>
@@ -94,8 +94,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>Back-End Development</h1>
-              <p>
+              <h1 className="header-categories">Back-End Development</h1>
+              <p className="text-categories">
                 A back-end developer is a type of programmer who creates the
                 logical back-end and core computational logic of a website,
                 software or information system.
@@ -115,8 +115,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>Full-Stack Development </h1>
-              <p>
+              <h1 className="header-categories">Full-Stack Development </h1>
+              <p className="text-categories">
                 Full Stack development, consists of both "Front-End Development"
                 and "Back-End Development".
               </p>
@@ -137,8 +137,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>Android</h1>
-              <p>
+              <h1 className="header-categories">Android</h1>
+              <p className="text-categories">
                 Android is a Linux based operating system it is designed
                 primarily for touch screen mobile devices such as smart phones
                 and tablet computers...
@@ -158,8 +158,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>Swift</h1>
-              <p>
+              <h1 className="header-categories">Swift</h1>
+              <p className="text-categories">
                 Swift is a powerful and intuitive programming language for
                 macOS, iOS, watchOS, tvOS and beyond.
               </p>
@@ -178,8 +178,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>Robotic</h1>
-              <p>
+              <h1 className="header-categories">Robotic</h1>
+              <p className="text-categories">
                 Robot software is the set of coded commands or instructions that
                 tell a mechanical device and electronic system, known together
                 as a robot, what tasks to perform.
@@ -201,8 +201,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>Python</h1>
-              <p>
+              <h1 className="header-categories">Python</h1>
+              <p className="text-categories">
                 Python is an interpreted, object-oriented, high-level
                 programming language with dynamic semantics.
               </p>
@@ -221,8 +221,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>JavaScript</h1>
-              <p>
+              <h1 className="header-categories">JavaScript</h1>
+              <p className="text-categories">
                 JavaScript is a client scripting language which is used for
                 creating web pages/apps and mobile apps.
               </p>
@@ -241,8 +241,8 @@ export default function AutoGrid() {
               />
             </ButtonBase>
             <div>
-              <h1>ReactJS</h1>
-              <p>
+              <h1 className="header-categories">ReactJS</h1>
+              <p className="text-categories">
                 ReactJS, is basically the library that consists of some very
                 useful and time-savier templates for JavaScript.
               </p>

@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 50px;
   margin: 10px;
   min-width: 230px;
   max-width: 315px;
@@ -54,7 +54,7 @@
   margin: 0;
   opacity: 0;
   letter-spacing: 1px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .snip1584 h3 {
   -webkit-transform: translateY(-100%);
@@ -87,7 +87,7 @@
 .snip1584:hover:before,
 .snip1584.hover:before {
   border-radius: 25px;
-  top: 115px; // inside hovering position from top !
+  top: 60px; // inside hovering position from top !
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }

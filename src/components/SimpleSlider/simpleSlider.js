@@ -10,39 +10,48 @@ var data = [
   {
     image: require("../SimpleSlider/images/clement-h-95YRwf6CNw8-unsplash.jpg"),
     title: "Re:coded",
-    subtitle: "Web Development /Front-End"
+    subtitle: "Web Development /Front-End",
+    link: "https://www.re-coded.com/programs"
   },
   {
     image: require("../SimpleSlider/images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg"),
     title: "Vodafone Bootcamp",
-    subtitle: "Starp-Up"
+    subtitle: "Starp-Up",
+    link: "https://vodafoneuplift.de/en/"
   },
   {
     image: require("../SimpleSlider/images/nesa-by-makers-kwzWjTnDPLk-unsplash.jpg"),
     title: "Bilge Adam",
-    subtitle: "Python"
+    subtitle: "Python",
+    link:
+      "https://www.bilgeadam.com/akademi/bilisim-uzmanligi/application-development-with-python"
   },
   {
     image: require("../SimpleSlider/images/kobu-agency-67L18R4tW_w-unsplash.jpg"),
     title: "Kodluyoruz",
-    subtitle: "Back-End"
+    subtitle: "Back-End",
+    link: "https://www.kodluyoruz.org/akademi-bootcamp/"
   },
   {
     image: require("../SimpleSlider/images/markus-spiske-gcgves5H_Ac-unsplash.jpg"),
     title: "SAP",
-    subtitle: "A.B.A.P"
+    subtitle: "A.B.A.P",
+    link:
+      "https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=221467&company=SAP&username=&st=1F049EB61D575BD2AC65FA8655BE1C32CCA5B5EE"
   },
   {
     image: require("../SimpleSlider/images/shahadat-shemul-BfrQnKBulYQ-unsplash.jpg"),
     title: "Bilge is",
-    subtitle: "Online Coding"
+    subtitle: "Web Development",
+    link: "https://bilgeis.net/tr/courses/category/14/web-ve-tasarim"
   }
 ];
 class Article extends React.Component {
   render() {
     const image = this.props.data.image,
       title = this.props.data.title,
-      subtitle = this.props.data.subtitle;
+      subtitle = this.props.data.subtitle,
+      link = this.props.data.link;
     return (
       <figure className={styles.snip1584}>
         <img src={image} />
@@ -50,7 +59,7 @@ class Article extends React.Component {
           <h3>{title}</h3>
           <h5>{subtitle}</h5>
         </figcaption>
-        <a href="#" />
+        <a href={link} target="_blank" />
       </figure>
     );
   }
