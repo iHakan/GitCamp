@@ -62,7 +62,7 @@ export default function AutoGrid() {
         }}
         variant="h3"
       >
-        Up Coming Bootcamps
+        Categories
       </Typography>
       <Grid container spacing={2} justify="center">
         <Grid item xs className={classes.secondItem}>

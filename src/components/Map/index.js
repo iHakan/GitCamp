@@ -88,6 +88,7 @@ export default function App() {
     >
       <Typography
         style={{
+          paddingTop: 100,
           paddingBottom: 100,
           textAlign: "left",
           fontWeight: "bold",

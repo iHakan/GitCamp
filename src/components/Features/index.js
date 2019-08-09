@@ -1,11 +1,11 @@
-import React, { useState, useRef } from 'react';
-import ReactDOM from 'react-dom';
-import { useSpring, animated } from 'react-spring';
-import ReactParticles from 'react-particles-js';
-import particlesConfig from './particles-config.js';
-import './styles.scss';
+import React, { useState, useRef } from "react";
+import ReactDOM from "react-dom";
+import { useSpring, animated } from "react-spring";
+import ReactParticles from "react-particles-js";
+import particlesConfig from "./particles-config.js";
+import "./styles.scss";
 
-function About() {
+function Features() {
   return (
     <div className="main">
       <Particles>
@@ -33,11 +33,11 @@ function About() {
 function Card({ children }) {
   const ref = useRef();
 
- const [isHovered, setHovered] = useState(false);
+  const [isHovered, setHovered] = useState(false);
 
   const [animatedProps, setAnimatedProps] = useSpring(() => {
     return {
-     xys: [0, 0, 1],
+      xys: [0, 0, 1],
       config: { mass: 10, tension: 400, friction: 40, precision: 0.00001 }
     };
   });
@@ -60,8 +60,8 @@ function Card({ children }) {
 
         const dampen = 50;
         const xys = [
-          -(y - ref.current.clientHeight / 2) / dampen, 
-          (x - ref.current.clientWidth / 2) / dampen, 
+          -(y - ref.current.clientHeight / 2) / dampen,
+          (x - ref.current.clientWidth / 2) / dampen,
           1.07 // Scale
         ];
 
@@ -90,11 +90,11 @@ function Card({ children }) {
 
 function Particles({ children }) {
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: "relative" }}>
       <ReactParticles
         params={particlesConfig}
         style={{
-          position: 'absolute',
+          position: "absolute",
           zIndex: 1,
           left: 0,
           right: 0,
@@ -102,7 +102,7 @@ function Particles({ children }) {
           top: 0
         }}
       />
-      {children && <div style={{ position: 'relative' }}>{children}</div>}
+      {children && <div style={{ position: "relative" }}>{children}</div>}
     </div>
   );
 }
@@ -122,7 +122,7 @@ function Image({ ratio, src }) {
         <div
           className="ratio"
           style={{
-            paddingTop: ratio * 100 + '%'
+            paddingTop: ratio * 100 + "%"
           }}
         >
           <div className="ratio-inner">
@@ -137,26 +137,28 @@ function Image({ ratio, src }) {
 function Info() {
   return (
     <div className="info">
-     <h1>Features</h1>
+      <h1>Features</h1>
     </div>
   );
 }
 
 const cards = [
   {
-    title: 'Search and Find Easily 🔎',
+    title: "Search and Find Easily 🔎",
     description:
-      'Our first aim is that you can easily meet with Bootcamp courses. Therefore, when we build website,one of the most important thing for us is that each bootcamp has been found easily by you.',
-    image: 'https://elements-cover-images-0.imgix.net/d7745bbc-e424-4448-8832-f6d9886c861a?auto=compress%2Cformat&fit=max&w=1170&s=f83ab37a8556dbfc98b71d0514c43ff8',
+      "Our first aim is that you can easily meet with Bootcamp courses. Therefore, when we build website,one of the most important thing for us is that each bootcamp has been found easily by you.",
+    image:
+      "https://elements-cover-images-0.imgix.net/d7745bbc-e424-4448-8832-f6d9886c861a?auto=compress%2Cformat&fit=max&w=1170&s=f83ab37a8556dbfc98b71d0514c43ff8",
     imageRatio: 784 / 1016
   },
   {
-    title: 'Big Community 👥',
+    title: "Big Community 👥",
     description:
-      'We are big community. Thus, Our website can always be up-to-date. This is one of the most important things to continue life of our website.',
-    image: 'https://refreshfinancial.ca/wp-content/themes/refresh/images/careers/top-img.png',
+      "We are big community. Thus, Our website can always be up-to-date. This is one of the most important things to continue life of our website.",
+    image:
+      "https://refreshfinancial.ca/wp-content/themes/refresh/images/careers/top-img.png",
     imageRatio: 839 / 1133
   }
 ];
 
-export default About;
+export default Features;

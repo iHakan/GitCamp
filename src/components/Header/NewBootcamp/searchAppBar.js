@@ -92,7 +92,7 @@ export default function SearchAppBar() {
                 <a href={require("../../Upcomings/index")}>Up Comings</a>
               </li>
               <li>
-                <a href={require("categories")}>Categories</a>
+                <a href={require("../../Categories/index")}>Categories</a>
               </li>
               <li>
                 <a href={require("../../WhatIsBootcamp/index")}>
