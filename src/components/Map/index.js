@@ -9,6 +9,7 @@ import {
 import * as bootcampData from "./bootcamps.json";
 import mapStyles from "./mapStyles";
 import * as categoryUrl from "./categoryUrl.json";
+import Typography from "@material-ui/core/Typography";
 
 function Map() {
   const [selectedCamp, setSelectedCamp] = useState(null);
@@ -78,11 +79,24 @@ export default function App() {
   return (
     <div
       style={{
+        paddingBottom: 50,
+        margin: "auto",
         paddigLeft: 0,
-        width: "100%",
+        width: "80%",
         height: "35vh"
       }}
     >
+      <Typography
+        style={{
+          paddingBottom: 100,
+          textAlign: "left",
+          fontWeight: "bold",
+          color: "rgb(179, 179, 179)"
+        }}
+        variant="h3"
+      >
+        Up Coming Bootcamps
+      </Typography>
       <MapWrapped
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAGc1xiJdOewKwtysI7MBfk3D77y3n6Yq8`}
         loadingElement={<div style={{ height: `100%` }} />}
