@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import styles from "./styles.module.css";
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -51,6 +52,18 @@ export default function AutoGrid() {
 
   return (
     <div className={classes.root}>
+      <Typography
+        style={{
+          paddingTop: 100,
+          paddingBottom: 50,
+          textAlign: "left",
+          fontWeight: "bold",
+          color: "rgb(179, 179, 179)"
+        }}
+        variant="h3"
+      >
+        Up Coming Bootcamps
+      </Typography>
       <Grid container spacing={2} justify="center">
         <Grid item xs className={classes.secondItem}>
           <Paper className={classes.paper}>
