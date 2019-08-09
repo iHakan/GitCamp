@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "80%",
       margin: "auto",
       paddingTop: 50,
-      paddingBottom: 50
+      paddingBottom: 150
     },
     paper: {
       height: 440,

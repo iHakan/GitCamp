@@ -5,6 +5,7 @@
   position: relative;
   display: inline-block;
   overflow: hidden;
+  padding-top: 100px;
   margin: 10px;
   min-width: 230px;
   max-width: 315px;
@@ -37,6 +38,7 @@
   vertical-align: top;
   max-width: 100%;
   backface-visibility: hidden;
+  border-radius: 8px;
 }
 .snip1584 figcaption {
   position: absolute;
@@ -55,6 +57,7 @@
   margin: 0;
   opacity: 0;
   letter-spacing: 1px;
+  padding-top: 100px;
 }
 .snip1584 h3 {
   -webkit-transform: translateY(-100%);
@@ -66,6 +69,8 @@
   margin-bottom: 5px;
 }
 .snip1584 h5 {
+  // button inside the img!!
+  border-radius: 25px;
   font-weight: normal;
   background-color: #ae895d;
   padding: 3px 10px;
@@ -84,7 +89,8 @@
 }
 .snip1584:hover:before,
 .snip1584.hover:before {
-  top: 10px;
+  border-radius: 25px;
+  top: 115px; // inside hovering position from top !
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
@@ -106,15 +112,10 @@
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
 /* Demo purposes only */
 body {
   background-color: #f7f7f7;
   text-align: center;
   color: white;
-}
-.app {
-  width: 1200px;
-  margin: auto;
-  font-family: "Raleway";
-  font-size: 24px;
 }
