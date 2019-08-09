@@ -10,6 +10,7 @@ function Features() {
   return (
     <div className="main">
       <Typography
+        id="whatIsBootcamp"
         style={{
           paddingBottom: 50,
           textAlign: "left",

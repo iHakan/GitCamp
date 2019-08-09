@@ -92,21 +92,19 @@ export default function SearchAppBar() {
           <div className="menu-links">
             <ul>
               <li>
-                <a href={require("../../Upcomings/index")}>Up Comings</a>
+                <a href="#upComings">Up Comings</a>
               </li>
               <li>
-                <a href={require("../../Categories/index")}>Categories</a>
+                <a href="#Category">Categories</a>
               </li>
               <li>
-                <a href={require("../../WhatIsBootcamp/index")}>
-                  What is Bootcamp?
-                </a>
+                <a href="#whatIsBootcamp">What is Bootcamp?</a>
               </li>
               <li>
-                <a href={require("../../Map/index")}>Location</a>
+                <a href="#map-location">Location</a>
               </li>
               <li>
-                <a href={require("../../Footer/index")}>Contact</a>
+                <a href="#footer-contact">Contact</a>
               </li>
             </ul>
           </div>

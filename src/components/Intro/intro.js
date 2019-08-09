@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./styles.module.scss";
 import { createRequireFromPath } from "module";
 import { Backpack } from "react-kawaii";
 import SpeechBubble from "react-kawaii/lib/es/components/speechBubble/SpeechBubble";
 import Typography from "@material-ui/core/Typography/Typography";
 import { Container } from "@material-ui/core";
+import styles from "./styles.module.css";
 
 class Intro extends React.Component {
   render() {
@@ -19,19 +19,22 @@ class Intro extends React.Component {
         </Typography>
         <Container style={{ paddingTop: 20, color: "#9e9c9c", width: "60%" }}>
           <p className="text-intro">
-            Hi there dreamer! We are GitCamp team who were recently graduate
-            from one the best bootcamp on "Front-End Web Development" in Turkey,
-            provided by "Re:coded". We were so pleased to be in the Re:coded
-            family this year.Although, there are millions of students waiting
-            out there to learn coding, they hardly find a nice bootcamp.
+            Hi there Dreamer! We are "GitCamp" team who were recently graduate
+            from one the best bootcamp on "Front-End Web Development" in
+            Turkey/Gaziantep, provided by the collaboration of "Re:coded" and
+            "Flatiron School". As the new graduates,we are so pleased to be in
+            the Re:coded family.
           </p>
-
-          <p>
+          <p className="text-intro">
+            Although, there are millions of students waiting out there to learn
+            coding, they hardly find a nice bootcamp.
+          </p>
+          <p className="text-intro">
             That's why we are here to help you to find your best bootcamp match!
             Check out our website and enjoy it!
           </p>
-          <p>npm install ...</p>
-          <p>Happy Hacking!</p>
+          <p className="text-intro">npm install ...</p>
+          <p className="text-intro">Happy Hacking!</p>
         </Container>
       </div>
     );

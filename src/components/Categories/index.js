@@ -53,6 +53,7 @@ export default function AutoGrid() {
   return (
     <div className={classes.root}>
       <Typography
+        id="Category"
         style={{
           paddingTop: 100,
           paddingBottom: 25,

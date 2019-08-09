@@ -87,6 +87,7 @@ export default function App() {
       }}
     >
       <Typography
+        id="map-location"
         style={{
           paddingTop: 100,
           paddingBottom: 50,

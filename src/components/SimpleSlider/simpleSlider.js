@@ -88,6 +88,7 @@ class News extends React.Component {
     return (
       <Container>
         <Typography
+          id="upComings"
           style={{
             paddingTop: 100,
             textAlign: "left",
