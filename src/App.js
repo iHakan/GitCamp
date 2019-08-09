@@ -3,7 +3,6 @@ import SearchAppBar from "./components/Header/NewBootcamp/searchAppBar";
 import Map from "./components/Map";
 import SimpleSlider from "./components/SimpleSlider/simpleSlider";
 import Categories from "./components/Categories";
-import Features from "./components/Features"
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       <SimpleSlider />
       <Categories />
       <Map />
-      <Features/>
       {/*Buraya tüm sectionların taglerini oluşturup koyucam ki router çalışsın! */}
     </div>
   );

@@ -6,12 +6,44 @@ import {
   Marker,
   InfoWindow
 } from "react-google-maps";
-import * as bootcampData from "./bootcamps.json";
 import mapStyles from "./mapStyles";
 import * as categoryUrl from "./categoryUrl.json";
 
-function Map() {
+
+
+
+class MapFromApi extends React.Component {
+  constructor() {
+    super()
+    this.fetchMapData()
+  }
+  state = {
+    responseJson: null
+  }
+  async fetchMapData() {
+    const response= await fetch("https://firestore.googleapis.com/v1/projects/bootcamp-7278d/databases/(default)/documents/bootcamps/")
+    const responseJson = await response.json()
+    this.setState({ responseJson: responseJson })
+  } 
+  render () {
+    if (this.state.responseJson == undefined) {
+      return <h1>Bekle ...</h1>
+    }
+    return <MapWrapped
+    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAGc1xiJdOewKwtysI7MBfk3D77y3n6Yq8`}
+    loadingElement={<div style={{ height: `100%` }} />}
+    containerElement={<div style={{ height: `100%` }} />}
+    mapElement={<div style={{ height: `100%` }} />}
+     data={this.state.responseJson}
+     />
+    
+  }
+}
+
+
+function Map(props) {
   const [selectedCamp, setSelectedCamp] = useState(null);
+
 
   useEffect(() => {
     const listener = e => {
@@ -32,39 +64,37 @@ function Map() {
       defaultCenter={{ lat: 39.108888, lng: 35.584347 }}
       defaultOptions={{ styles: mapStyles }}
     >
-      {bootcampData.bootcamps.map(camp => {
-        console.log(categoryUrl.default);
+      {props.data.documents.map(camp => {
         return (
-          <Marker
-            position={{
-              lat: camp.geometry.coordinates[0],
-              lng: camp.geometry.coordinates[1]
-            }}
-            onClick={() => {
-              setSelectedCamp(camp);
-            }}
-            icon={{
-              url: categoryUrl.default[camp.properties.catagory],
-              scaledSize: new window.google.maps.Size(50, 50)
-            }}
-          />
-        );
-      })}
+        <Marker
+          position={{
+            lat: camp.fields.geometry.mapValue.fields.position.mapValue.fields.lat.stringValue,
+            lng: camp.fields.geometry.mapValue.fields.position.mapValue.fields.lng.stringValue
+          }}
+          onClick={() => {
+            setSelectedCamp(camp);
+          }}
+          icon={{
+            url: categoryUrl.default[camp.fields.properties.mapValue.fields.category.stringValue],
+            scaledSize: new window.google.maps.Size(50, 50)
+          }}
+        />
+      )})}
 
-      {selectedCamp && (
+      {selectedCamp &&  (
         <InfoWindow
           onCloseClick={() => {
             setSelectedCamp(null);
           }}
           position={{
-            lat: selectedCamp.geometry.coordinates[0],
-            lng: selectedCamp.geometry.coordinates[1]
+            lat: selectedCamp.fields.geometry.mapValue.fields.position.mapValue.fields.lat.stringValue,
+            lng: selectedCamp.fields.geometry.mapValue.fields.position.mapValue.fields.lng.stringValue
           }}
         >
           <div>
-            <img src={selectedCamp.properties.logo} width="100" height="auto" />
-            <h2>{selectedCamp.properties.name}</h2>
-            <p>{selectedCamp.properties.description}</p>
+            <img src={selectedCamp.fields.properties.mapValue.fields.logo.stringValue} width="100" height="auto" />
+            <h2>{selectedCamp.fields.properties.mapValue.fields.name.stringValue}</h2>
+            <p>{selectedCamp.fields.properties.mapValue.fields.description.stringValue}</p>
           </div>
         </InfoWindow>
       )}
@@ -76,18 +106,8 @@ const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 export default function App() {
   return (
-    <div
-      style={{
-        paddigLeft: 0,
-        width: "100%",
-        height: "35vh"
-      }}
-    >
-      <MapWrapped
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAGc1xiJdOewKwtysI7MBfk3D77y3n6Yq8`}
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `100%` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
+    <div style={{ width: "100vw", height: "70vh" }}>
+      <MapFromApi
       />
     </div>
   );
