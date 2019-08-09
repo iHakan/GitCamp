@@ -6,12 +6,14 @@ import Categories from "./components/Categories";
 import Features from "./components/Features";
 import Intro from "./components/Intro/intro";
 import Footer from "./components/Footer"
-
 function App() {
   return (
     <div className="App">
       <SearchAppBar />
-
+      <br />
+      <br />
+      <br />
+      <Intro />
       <SimpleSlider />
       <Categories />
       <Features />
