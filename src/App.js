@@ -3,7 +3,7 @@ import SearchAppBar from "./components/Header/NewBootcamp/searchAppBar";
 import Map from "./components/Map";
 import SimpleSlider from "./components/SimpleSlider/simpleSlider";
 import Categories from "./components/Categories";
-import Features from "./components/Features"
+import Features from "./components/"
 
 function App() {
   return (
