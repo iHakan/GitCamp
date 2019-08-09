@@ -10,7 +10,10 @@ function App() {
   return (
     <div className="App">
       <SearchAppBar />
-
+      <br />
+      <br />
+      <br />
+      <Intro />
       <SimpleSlider />
       <Categories />
       <Features />
