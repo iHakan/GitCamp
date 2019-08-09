@@ -12,6 +12,7 @@ import { opaqueType } from "@babel/types";
 import { fontFamily } from "@material-ui/system";
 import FormNBC from "../Modal/modal";
 import Link from "@material-ui/core/Link";
+import stlyles from "./style.module.css";
 
 const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
@@ -20,7 +21,6 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
-    display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block"
     }
@@ -86,7 +86,27 @@ export default function SearchAppBar() {
           >
             urBootcamp !
           </Typography>
-
+          <div className="menu-links">
+            <ul>
+              <li>
+                <a href={require("../../Upcomings/index")}>Up Comings</a>
+              </li>
+              <li>
+                <a href={require("../../Categories/index")}>Categories</a>
+              </li>
+              <li>
+                <a href={require("../../WhatIsBootcamp/index")}>
+                  What is Bootcamp?
+                </a>
+              </li>
+              <li>
+                <a href={require("../../Map/index")}>Location</a>
+              </li>
+              <li>
+                <a href={require("../../Footer/index")}>Contact</a>
+              </li>
+            </ul>
+          </div>
           <div className="sectionLinks" />
           <div className={classes.search}>
             <div className={classes.searchIcon}>
