@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import styles from "./styles.module.scss";
 import Container from "@material-ui/core/Container";
+import { Typography } from "@material-ui/core";
 
 var data = [
   {
@@ -77,6 +78,17 @@ class News extends React.Component {
     }
     return (
       <Container>
+        <Typography
+          style={{
+            paddingTop: 100,
+            textAlign: "left",
+            fontWeight: "bold",
+            color: "rgb(179, 179, 179)"
+          }}
+          variant="h3"
+        >
+          Up Coming Bootcamps
+        </Typography>
         <div className={styles.news}>
           <Slider {...settings}>{newsTemplate}</Slider>
           <strong
