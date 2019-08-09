@@ -214,7 +214,7 @@ export default function AutoGrid() {
             {" "}
             <ButtonBase className={classes.image}>
               <img
-                style={{ width: 100 }}
+                style={{ width: 128 }}
                 className={classes.img}
                 alt="complex"
                 src={require("./images/js.png")}
@@ -234,7 +234,7 @@ export default function AutoGrid() {
             {" "}
             <ButtonBase className={classes.image}>
               <img
-                style={{ width: 100 }}
+                style={{ width: 128 }}
                 className={classes.img}
                 alt="complex"
                 src={require("./images/react.svg")}
