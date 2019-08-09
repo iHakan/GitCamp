@@ -7,34 +7,34 @@ import Container from "@material-ui/core/Container";
 
 var data = [
   {
-    image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg",
-    title: "Burgundy Flemming",
-    subtitle: "Advertising"
+    image: require("../SimpleSlider/images/clement-h-95YRwf6CNw8-unsplash.jpg"),
+    title: "Re:coded",
+    subtitle: "Web Development /Front-End"
   },
   {
-    image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg",
-    title: "Nigel Nigel",
-    subtitle: "Sound & Vision"
+    image: require("../SimpleSlider/images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg"),
+    title: "Vodafone Bootcamp",
+    subtitle: "Starp-Up"
   },
   {
-    image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg",
-    title: "Caspian Bellevedere",
-    subtitle: "Accounting"
+    image: require("../SimpleSlider/images/nesa-by-makers-kwzWjTnDPLk-unsplash.jpg"),
+    title: "Bilge Adam",
+    subtitle: "Python"
   },
   {
-    image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg",
-    title: "Burgundy Flemming",
-    subtitle: "Advertising"
+    image: require("../SimpleSlider/images/kobu-agency-67L18R4tW_w-unsplash.jpg"),
+    title: "Kodluyoruz",
+    subtitle: "Back-End"
   },
   {
-    image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg",
-    title: "Nigel Nigel",
-    subtitle: "Sound & Vision"
+    image: require("../SimpleSlider/images/markus-spiske-gcgves5H_Ac-unsplash.jpg"),
+    title: "SAP",
+    subtitle: "A.B.A.P"
   },
   {
-    image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg",
-    title: "Caspian Bellevedere",
-    subtitle: "Accounting"
+    image: require("../SimpleSlider/images/shahadat-shemul-BfrQnKBulYQ-unsplash.jpg"),
+    title: "Bilge is",
+    subtitle: "Online Coding"
   }
 ];
 class Article extends React.Component {
@@ -58,6 +58,7 @@ class News extends React.Component {
   render() {
     var newsTemplate;
     var settings = {
+      autoplay: true,
       dots: true,
       infinite: true,
       slidesToShow: 3,
