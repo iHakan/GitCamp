@@ -90,14 +90,15 @@ export default function AutoGrid() {
                 style={{ width: 128 }}
                 className={classes.img}
                 alt="complex"
-                src={require("./images/js.png")}
+                src={require("./images/cloudi.png")}
               />
             </ButtonBase>
             <div>
-              <h1>JavaScript</h1>
+              <h1>Back-End Development</h1>
               <p>
-                JavaScript is a client scripting language which is used for
-                creating web pages/apps and mobile apps.
+                A back-end developer is a type of programmer who creates the
+                logical back-end and core computational logic of a website,
+                software or information system.
               </p>
             </div>
           </Paper>
@@ -107,17 +108,17 @@ export default function AutoGrid() {
             {""}
             <ButtonBase className={classes.image}>
               <img
-                style={{ width: 120 }}
+                style={{ paddingTop: 10, width: 120 }}
                 className={classes.img}
                 alt="complex"
-                src={require("./images/react.svg")}
+                src={require("./images/browser.png")}
               />
             </ButtonBase>
             <div>
-              <h1>ReactJS</h1>
+              <h1>Full-Stack Development </h1>
               <p>
-                ReactJS, is basically the library that consists of some very
-                useful and time-savier templates for JavaScript.
+                Full Stack development, consists of both "Front-End Development"
+                and "Back-End Development".
               </p>
             </div>
           </Paper>
@@ -129,9 +130,10 @@ export default function AutoGrid() {
             {" "}
             <ButtonBase className={classes.image}>
               <img
+                style={{ width: 142 }}
                 className={classes.img}
                 alt="complex"
-                src={require("./images/android.png")}
+                src={require("./images/android-os.png")}
               />
             </ButtonBase>
             <div>
@@ -149,7 +151,7 @@ export default function AutoGrid() {
             {" "}
             <ButtonBase className={classes.image}>
               <img
-                style={{ width: 100 }}
+                style={{ paddingTop: 14, width: 128 }}
                 className={classes.img}
                 alt="complex"
                 src={require("./images/swift.png")}
@@ -169,7 +171,30 @@ export default function AutoGrid() {
             {" "}
             <ButtonBase className={classes.image}>
               <img
-                style={{ width: 100 }}
+                style={{ width: 128 }}
+                className={classes.img}
+                alt="complex"
+                src={require("./images/robot.png")}
+              />
+            </ButtonBase>
+            <div>
+              <h1>Robotic</h1>
+              <p>
+                Robot software is the set of coded commands or instructions that
+                tell a mechanical device and electronic system, known together
+                as a robot, what tasks to perform.
+              </p>
+            </div>
+          </Paper>
+        </Grid>
+      </Grid>
+      <Grid container spacing={2}>
+        <Grid item xs className={classes.firstItem}>
+          <Paper className={classes.paper}>
+            {" "}
+            <ButtonBase className={classes.image}>
+              <img
+                style={{ width: 128 }}
                 className={classes.img}
                 alt="complex"
                 src={require("./images/python.png")}
@@ -180,6 +205,46 @@ export default function AutoGrid() {
               <p>
                 Python is an interpreted, object-oriented, high-level
                 programming language with dynamic semantics.
+              </p>
+            </div>
+          </Paper>
+        </Grid>
+        <Grid item xs className={classes.fourthItem}>
+          <Paper className={classes.paper}>
+            {" "}
+            <ButtonBase className={classes.image}>
+              <img
+                style={{ width: 100 }}
+                className={classes.img}
+                alt="complex"
+                src={require("./images/js.png")}
+              />
+            </ButtonBase>
+            <div>
+              <h1>JavaScript</h1>
+              <p>
+                JavaScript is a client scripting language which is used for
+                creating web pages/apps and mobile apps.
+              </p>
+            </div>
+          </Paper>
+        </Grid>
+        <Grid item xs className={classes.fourthItem}>
+          <Paper className={classes.paper}>
+            {" "}
+            <ButtonBase className={classes.image}>
+              <img
+                style={{ width: 100 }}
+                className={classes.img}
+                alt="complex"
+                src={require("./images/react.svg")}
+              />
+            </ButtonBase>
+            <div>
+              <h1>ReactJS</h1>
+              <p>
+                ReactJS, is basically the library that consists of some very
+                useful and time-savier templates for JavaScript.
               </p>
             </div>
           </Paper>
