@@ -13,6 +13,8 @@ import { fontFamily } from "@material-ui/system";
 import FormNBC from "../Modal/modal";
 import Link from "@material-ui/core/Link";
 import stlyles from "./style.module.css";
+import { Backpack } from "react-kawaii";
+import Cat from "react-kawaii/lib/es/components/cat/Cat";
 
 const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
@@ -78,13 +80,14 @@ export default function SearchAppBar() {
         }}
       >
         <Toolbar>
+          <Cat size={90} mood="blissful" color="#8f919b" />
           <Typography
-            style={{ textAlign: "left" }}
+            style={{ paddingLeft: 10, textAlign: "left" }}
             className={classes.title}
             variant="h4"
             noWrap
           >
-            urBootcamp !
+            GitCamp
           </Typography>
           <div className="menu-links">
             <ul>

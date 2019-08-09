@@ -28,7 +28,7 @@ class FormNBC extends React.Component {
         <Button
           variant="contained"
           style={{
-            backgroundColor: "#414860", // #97A067
+            backgroundColor: "#414860",
             color: "white",
             marginLeft: 25
           }}
