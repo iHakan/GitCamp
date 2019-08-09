@@ -4,10 +4,22 @@ import { useSpring, animated } from "react-spring";
 import ReactParticles from "react-particles-js";
 import particlesConfig from "./particles-config.js";
 import "./styles.scss";
+import Typography from "@material-ui/core/Typography";
 
 function Features() {
   return (
     <div className="main">
+      <Typography
+        style={{
+          paddingBottom: 50,
+          textAlign: "left",
+          fontWeight: "bold",
+          color: "rgb(179, 179, 179)"
+        }}
+        variant="h3"
+      >
+        Features
+      </Typography>
       <Particles>
         <Hero>
           <div className="container">
@@ -135,11 +147,7 @@ function Image({ ratio, src }) {
 }
 
 function Info() {
-  return (
-    <div className="info">
-      <h1>Features</h1>
-    </div>
-  );
+  return <div className="info" />;
 }
 
 const cards = [

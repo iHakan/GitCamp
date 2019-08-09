@@ -4,11 +4,13 @@ import Map from "./components/Map";
 import SimpleSlider from "./components/SimpleSlider/simpleSlider";
 import Categories from "./components/Categories";
 import Features from "./components/Features";
+import Intro from "./components/Intro/intro";
 
 function App() {
   return (
     <div className="App">
       <SearchAppBar />
+
       <SimpleSlider />
       <Categories />
       <Features />
