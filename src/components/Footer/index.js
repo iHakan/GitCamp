@@ -1,45 +1,36 @@
 import React from "react";
 import "./style.scss";
-import {Backpack,Cat} from "react-kawaii"
-
-
+import { Backpack, Cat } from "react-kawaii";
 
 const Footer = () => {
   return (
+    <div id="footer-footer">
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>
+            <span>
+              <Cat size={90} mood="excited" color="#8f919b" />
+            </span>
+            git<span>Camp !</span>
+          </h3>
 
-	<div id="footer-footer">
+          <p class="footer-company-name">
+            Copyright &copy; 2019. All Rights Reserved.
+          </p>
+        </div>
 
-		<footer class="footer-distributed">
+        <div class="footer-right">
+          <p id="footer-contact">Contact Us</p>
 
-			<div class="footer-left">
-
-				<h3><span><Cat size={90} mood="blissful" color="#8f919b" /></span>git<span>Camp !</span></h3>
-
-
-				<p class="footer-company-name">Copyright &copy; 2019. All Rights Reserved.</p>
-
-				
-
-			</div>
-
-			<div class="footer-right">
-
-				<p>Contact Us</p>
-
-				<form action="#" method="post">
-
-					<input type="text" name="email" placeholder="Email" />
-					<textarea name="message" placeholder="Message"></textarea>
-					<button>Send</button>
-
-				</form>
-
-			</div>
-
-		</footer>
-
-	</div>
+          <form action="#" method="post">
+            <input type="text" name="email" placeholder="Email" />
+            <textarea name="message" placeholder="Message" />
+            <button>Send</button>
+          </form>
+        </div>
+      </footer>
+    </div>
   );
-}
+};
 
 export default Footer;
