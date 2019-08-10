@@ -5,6 +5,7 @@ import SpeechBubble from "react-kawaii/lib/es/components/speechBubble/SpeechBubb
 import Typography from "@material-ui/core/Typography/Typography";
 import { Container } from "@material-ui/core";
 import styles from "./styles.module.css";
+import Effect from "./efect";
 
 class Intro extends React.Component {
   render() {
@@ -19,24 +20,8 @@ class Intro extends React.Component {
         </Typography>
         <Container style={{ paddingTop: 20, color: "#9e9c9c", width: "60%" }}>
           <p>
-            Hi there Dreamer! We are "GitCamp" team who did recently graduate
-            from one of the best bootcamp on "Front-End Web Development" in
-            Turkey/Gaziantep, provided by the collaboration of "Re:coded" and
-            "Flatiron School". As the new graduates,we are so pleased to be in
-            the Re:coded family.
+            <Effect />
           </p>
-          <p>
-            Although, there are millions of students waiting out there to learn
-            coding, they hardly find a nice bootcamp.
-          </p>
-          <p>
-            That's why we are here to help you to find your best bootcamp match!
-            Check out our website and enjoy it!
-          </p>
-          <br />
-          <p>npm install ...</p>
-          <br />
-          <p>Happy Hacking!</p>
         </Container>
       </div>
     );
@@ -44,3 +29,20 @@ class Intro extends React.Component {
 }
 
 export default Intro;
+//Hi there Dreamer! We are "GitCamp" team who did recently graduate
+//from one of the best bootcamp on "Front-End Web Development" in
+//Turkey/Gaziantep, provided by the collaboration of "Re:coded" and
+//"Flatiron School". As the new graduates,we are so pleased to be in
+//the Re:coded family.
+//</p>
+//<p>
+//Although, there are millions of students waiting out there to learn
+//coding, they hardly find a nice bootcamp.
+//</p>
+//<p>
+//That's why we are here to help you to find your best bootcamp match!
+//Check out our website and enjoy it!
+//<br />
+//          <p>npm install ...</p>
+//         <br />
+//         <p>Happy Hacking!</p>
