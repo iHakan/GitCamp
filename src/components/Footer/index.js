@@ -22,10 +22,13 @@ const Footer = () => {
         <div class="footer-right">
           <p id="footer-contact">Contact Us</p>
 
-          <form action="#" method="post">
-            <input type="text" name="email" placeholder="Email" />
+          <form
+            action="https://formspree.io/hakanyildiz248@gmail.com"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Email" />
             <textarea name="message" placeholder="Message" />
-            <button>Send</button>
+            <button type="submit">Send</button>
           </form>
         </div>
       </footer>
