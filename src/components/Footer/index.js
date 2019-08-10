@@ -14,9 +14,9 @@ const Footer = () => {
             git<span>Camp !</span>
           </h3>
 
-          <p class="footer-company-name">
+          <span class="footer-company-name">
             Copyright &copy; 2019. All Rights Reserved.
-          </p>
+          </span>
         </div>
 
         <div class="footer-right">
