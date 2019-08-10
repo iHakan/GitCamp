@@ -1,5 +1,11 @@
 {
-    "frontEnd": "https://railsware.com/images/team/careers/front-end-developer-role-74120a0c.svg",
-    "android" : "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/050/full/androidlogo.png",
-    "ios" : "https://www.freeiconspng.com/uploads/apple-icon-22.png"
+    "frontEnd": "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/laptop.png?alt=media&token=91454056-0957-47bc-a9bc-f9b114d457be",
+    "backEnd": "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/cloudi.png?alt=media&token=ccc3c9ce-c378-49bd-8551-88d7df48e372",
+    "android" : "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/android-os.png?alt=media&token=0c42b125-b0f9-433b-bf67-4cc134d9e1ef",
+    "swift" : "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/swift.png?alt=media&token=178625fc-1283-42b2-94cd-569b57c7022d",
+    "fullStack": "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/browser.png?alt=media&token=62db962c-fba4-4a40-9cf9-c58cef07b4bf",
+    "python": "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/python.png?alt=media&token=02412521-8957-4045-9877-4bd61280c9d7",
+    "robotic": "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/robot.png?alt=media&token=50c9edb9-ce66-4ea6-a5d8-feddd499adf6",
+    "javascript": "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/js.png?alt=media&token=caef68da-a23a-4910-b758-03aab7b4fd47",
+    "reactJs": "https://firebasestorage.googleapis.com/v0/b/bootcamp-7278d.appspot.com/o/react.svg?alt=media&token=e798d869-9cb0-42d5-b358-a67ace974cc5"
 }
