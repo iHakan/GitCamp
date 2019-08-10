@@ -83,7 +83,7 @@ export default function App() {
         margin: "auto",
         paddigLeft: 0,
         width: "80%",
-        height: "35vh"
+        height: "60vh"
       }}
     >
       <Typography
