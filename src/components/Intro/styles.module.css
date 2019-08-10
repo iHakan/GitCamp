@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
-
-.text-intro {
-  font-family: "Lacquer" !important;
-}
- {
-  /*This css is not working properly!!!*/
+@import url("https://fonts.googleapis.com/css?family=Handlee&display=swap");
+p {
+  font-family: "Handlee";
+  font-size: 20px;
 }

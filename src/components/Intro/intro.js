@@ -18,23 +18,25 @@ class Intro extends React.Component {
           Who We Are ?
         </Typography>
         <Container style={{ paddingTop: 20, color: "#9e9c9c", width: "60%" }}>
-          <p className="text-intro">
-            Hi there Dreamer! We are "GitCamp" team who were recently graduate
-            from one the best bootcamp on "Front-End Web Development" in
+          <p>
+            Hi there Dreamer! We are "GitCamp" team who did recently graduate
+            from one of the best bootcamp on "Front-End Web Development" in
             Turkey/Gaziantep, provided by the collaboration of "Re:coded" and
             "Flatiron School". As the new graduates,we are so pleased to be in
             the Re:coded family.
           </p>
-          <p className="text-intro">
+          <p>
             Although, there are millions of students waiting out there to learn
             coding, they hardly find a nice bootcamp.
           </p>
-          <p className="text-intro">
+          <p>
             That's why we are here to help you to find your best bootcamp match!
             Check out our website and enjoy it!
           </p>
-          <p className="text-intro">npm install ...</p>
-          <p className="text-intro">Happy Hacking!</p>
+          <br />
+          <p>npm install ...</p>
+          <br />
+          <p>Happy Hacking!</p>
         </Container>
       </div>
     );

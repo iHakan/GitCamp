@@ -74,7 +74,7 @@ export default function SearchAppBar() {
       <AppBar
         position="fixed"
         style={{
-          opacity: "0.998",
+          opacity: "0.99",
           backgroundColor: "#4f4e4e",
           borderColor: "#4f4e4e"
         }}
@@ -87,7 +87,9 @@ export default function SearchAppBar() {
             variant="h4"
             noWrap
           >
-            GitCamp
+            <a id="gitCamp" href="#">
+              GitCamp
+            </a>
           </Typography>
           <div className="menu-links">
             <ul>
