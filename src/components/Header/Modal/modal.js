@@ -2,7 +2,6 @@ import React from "react";
 import Rodal from "rodal";
 import { Button } from "@material-ui/core";
 import TextFields from "../FormNBC/formNBC";
-import ModalButton from "../ModalButton/modalButton";
 
 // include styles
 import "rodal/lib/rodal.css";
@@ -63,7 +62,6 @@ class FormNBC extends React.Component {
             <TextFields />
             <br />
             <br />
-            <ModalButton />
           </div>
         </Rodal>
       </div>

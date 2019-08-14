@@ -21,17 +21,21 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ModalButton() {
+export default function ModalButton(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.div}>
+    <button //the div here has been changed with button to activate the "onClick function"
+      className={classes.div}
+      onClick={props.onClick} // this is to activate the click button !
+      style={{ background: "none", border: "none" }} //this is to style the click button background
+    >
       <Fab style={{ backgroundColor: "rgb(24,187,156)" }} aria-label="add">
         <NavigationIcon
           style={{ color: "white" }}
           className={classes.extendedIcon}
         />
       </Fab>
-    </div>
+    </button>
   );
 }
