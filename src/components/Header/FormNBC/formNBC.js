@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import ModalButton from "../ModalButton/modalButton";
+import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -55,6 +56,8 @@ export default function TextFields() {
     companyName: "",
 
     emailAddress: "",
+
+    city: "",
 
     category: "",
 
@@ -159,8 +162,10 @@ export default function TextFields() {
         margin="normal"
       />
       <br />
-      <ModalButton onClick={handleSubmit} />{" "}
-      {/*ModalButton added here to send form infos*/}
+      <Container style={{ paddingLeft: 165, paddingTop: 20 }}>
+        <ModalButton onClick={handleSubmit} />{" "}
+        {/*ModalButton added here to send form infos*/}
+      </Container>
       {/*Form buraya kadar !*/}
     </form>
   );
