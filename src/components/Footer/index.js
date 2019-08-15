@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { Backpack, Cat } from "react-kawaii";
+import { Cat } from "react-kawaii";
 
 const Footer = () => {
   return (

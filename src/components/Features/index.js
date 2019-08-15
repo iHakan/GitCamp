@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import ReactDOM from "react-dom";
 import { useSpring, animated } from "react-spring";
 import ReactParticles from "react-particles-js";
 import particlesConfig from "./particles-config.js";
@@ -139,7 +138,7 @@ function Image({ ratio, src }) {
           }}
         >
           <div className="ratio-inner">
-            <img src={src} />
+            <img src={src} alt="." />
           </div>
         </div>
       </div>

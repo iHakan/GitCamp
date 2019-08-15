@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import styles from "./styles.module.scss";
 import Container from "@material-ui/core/Container";
 import { Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 class MapFromApi extends React.Component {

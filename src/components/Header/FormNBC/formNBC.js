@@ -1,10 +1,9 @@
 import React from "react";
-import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import ModalButton from "../ModalButton/modalButton";
-import Container from "@material-ui/core/Container";
+import Container from "@material-ui/core/Container"; //To fix the Submit button style!
 
 const useStyles = makeStyles(theme => ({
   container: {
