@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 li {
   margin: 0 25px;
   list-style-type: none;

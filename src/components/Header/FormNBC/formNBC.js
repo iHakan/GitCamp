@@ -3,6 +3,8 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
+import ModalButton from "../ModalButton/modalButton";
+import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -39,6 +41,10 @@ const categories = [
     label: "Back-End"
   },
   {
+    value: "ROBOTIC",
+    label: "Robotic"
+  },
+  {
     value: "",
     label: "None"
   }
@@ -51,6 +57,8 @@ export default function TextFields() {
 
     emailAddress: "",
 
+    city: "",
+
     category: "",
 
     description: "",
@@ -62,6 +70,12 @@ export default function TextFields() {
 
   const handleChange = name => event => {
     setValues({ ...values, [name]: event.target.value });
+  };
+
+  const handleSubmit = event => {
+    console.log(values);
+    console.log("We will add successfully submitted form message here");
+    //We will add successfully submitted form message here !
   };
 
   return (
@@ -147,6 +161,11 @@ export default function TextFields() {
         className={classes.textField}
         margin="normal"
       />
+      <br />
+      <Container style={{ paddingLeft: 165, paddingTop: 20 }}>
+        <ModalButton onClick={handleSubmit} />{" "}
+        {/*ModalButton added here to send form infos*/}
+      </Container>
       {/*Form buraya kadar !*/}
     </form>
   );
