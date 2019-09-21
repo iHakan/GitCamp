@@ -1,6 +1,4 @@
 import React from "react";
-import { createRequireFromPath } from "module";
-import { Backpack } from "react-kawaii";
 import SpeechBubble from "react-kawaii/lib/es/components/speechBubble/SpeechBubble";
 import Typography from "@material-ui/core/Typography/Typography";
 import { Container } from "@material-ui/core";

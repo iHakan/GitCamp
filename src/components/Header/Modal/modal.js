@@ -2,10 +2,7 @@ import React from "react";
 import Rodal from "rodal";
 import { Button } from "@material-ui/core";
 import TextFields from "../FormNBC/formNBC";
-
-// include styles
 import "rodal/lib/rodal.css";
-import { flexbox } from "@material-ui/system";
 
 class FormNBC extends React.Component {
   constructor(props) {
