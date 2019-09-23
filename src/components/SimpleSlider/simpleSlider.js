@@ -24,7 +24,7 @@ class MapFromApi extends React.Component {
   }
   render() {
     if (this.state.responseJson == undefined) {
-      return <h1>Bekle ...</h1>;
+      return <h1>Wait for it...</h1>;
     }
     return <News data={this.state.responseJson} />;
   }
