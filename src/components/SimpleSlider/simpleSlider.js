@@ -67,7 +67,7 @@ class News extends React.Component {
       newsTemplate = <p>Please add some cards</p>;
     }
     return (
-      <Container>
+      <Container className={styles.sliderCon}>
         <Typography
           id="upComings"
           style={{
