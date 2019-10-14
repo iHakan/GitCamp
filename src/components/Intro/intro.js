@@ -7,8 +7,8 @@ import styles from "./styles.module.css";
 class Intro extends React.Component {
   render() {
     return (
-      <div className="box-intro">
-        <SpeechBubble style={{}} size={60} mood="happy" color="#83D1FB" />
+      <div className={styles.boxIntro}>
+        <SpeechBubble size={60} mood="happy" color="#83D1FB" />
         <Typography
           style={{ paddingTop: 10, fontWeight: "bolder", color: "#7a7a7a" }}
           variant="h3"

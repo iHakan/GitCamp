@@ -24,7 +24,7 @@ class MapFromApi extends React.Component {
   }
   render() {
     if (this.state.responseJson == undefined) {
-      return <h1>Bekle ...</h1>;
+      return <h1>Wait for it...</h1>;
     }
     return <News data={this.state.responseJson} />;
   }
@@ -67,7 +67,7 @@ class News extends React.Component {
       newsTemplate = <p>Please add some cards</p>;
     }
     return (
-      <Container>
+      <Container className={styles.sliderCon}>
         <Typography
           id="upComings"
           style={{
