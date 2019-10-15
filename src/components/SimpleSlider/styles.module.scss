@@ -121,7 +121,7 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (min-width: 200px) and (max-width: 667px) {
   .upComingsHeader {
     text-align: left;
     padding-left: 50px;
@@ -163,5 +163,35 @@ body {
     transform: translateY(-100%);
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
+  }
+}
+@media only screen and (min-width: 668px) and (max-width: 1205px) {
+  .upComingsHeader {
+    text-align: left;
+    padding-left: 50px;
+  }
+  .snip1584 {
+    min-width: 120px;
+    max-width: 300px;
+    font-size: 10px;
+    margin: 5px;
+    width: 96%;
+  }
+  .snip1584:hover:before,
+  .snip1584.hover:before {
+    border-radius: 5px;
+    top: 60px; // inside hovering position from top !
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .snip1584 h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .snip1584 h5 {
+    // button inside the img!!
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 3px 10px;
   }
 }
