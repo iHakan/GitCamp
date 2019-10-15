@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GitCamp/static/css/main.262c6fe5.chunk.css",
+    "main.css": "/GitCamp/static/css/main.77d94eea.chunk.css",
     "main.js": "/GitCamp/static/js/main.dbcf9eba.chunk.js",
     "main.js.map": "/GitCamp/static/js/main.dbcf9eba.chunk.js.map",
     "runtime~main.js": "/GitCamp/static/js/runtime~main.79c3d16f.js",
@@ -9,10 +9,10 @@
     "static/js/2.c1e22cc2.chunk.js": "/GitCamp/static/js/2.c1e22cc2.chunk.js",
     "static/js/2.c1e22cc2.chunk.js.map": "/GitCamp/static/js/2.c1e22cc2.chunk.js.map",
     "index.html": "/GitCamp/index.html",
-    "precache-manifest.5502d674817175838fcb5c2977dee90f.js": "/GitCamp/precache-manifest.5502d674817175838fcb5c2977dee90f.js",
+    "precache-manifest.291e76040803aaa402c4612658935f50.js": "/GitCamp/precache-manifest.291e76040803aaa402c4612658935f50.js",
     "service-worker.js": "/GitCamp/service-worker.js",
     "static/css/2.634104c7.chunk.css.map": "/GitCamp/static/css/2.634104c7.chunk.css.map",
-    "static/css/main.262c6fe5.chunk.css.map": "/GitCamp/static/css/main.262c6fe5.chunk.css.map",
+    "static/css/main.77d94eea.chunk.css.map": "/GitCamp/static/css/main.77d94eea.chunk.css.map",
     "static/media/react.svg": "/GitCamp/static/media/react.9e1c8f97.svg",
     "static/media/robot.png": "/GitCamp/static/media/robot.254889a1.png",
     "static/media/slick-theme.css": "/GitCamp/static/media/slick.f97e3bbf.svg"
