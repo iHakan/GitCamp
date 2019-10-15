@@ -67,12 +67,11 @@ class News extends React.Component {
       newsTemplate = <p>Please add some cards</p>;
     }
     return (
-      <Container className={styles.sliderCon}>
+      <div className={styles.upComingsHeader}>
         <Typography
           id="upComings"
           style={{
             paddingTop: 100,
-            textAlign: "left",
             fontWeight: "bold",
             color: "rgb(179, 179, 179)"
           }}
@@ -80,15 +79,17 @@ class News extends React.Component {
         >
           Up Coming Bootcamps
         </Typography>
-        <div className={styles.news}>
-          <Slider {...settings}>{newsTemplate}</Slider>
-          <strong
-            className={
-              styles.news__count + " " + (data.length > 0 ? "" : styles.none)
-            }
-          />
-        </div>
-      </Container>
+        <Container className={styles.sliderCon}>
+          <div className={styles.news}>
+            <Slider {...settings}>{newsTemplate}</Slider>
+            <strong
+              className={
+                styles.news__count + " " + (data.length > 0 ? "" : styles.none)
+              }
+            />
+          </div>
+        </Container>
+      </div>
     );
   }
 }
