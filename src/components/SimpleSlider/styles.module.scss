@@ -1,3 +1,7 @@
+.upComingsHeader {
+  text-align: left;
+  padding-left: 150px;
+}
 .snip1584 {
   position: relative;
   display: inline-block;
@@ -115,4 +119,38 @@ body {
   background-color: #f7f7f7;
   text-align: center;
   color: white;
+}
+
+@media only screen and (max-width: 667px) {
+  .upComingsHeader {
+    text-align: left;
+    padding-left: 50px;
+  }
+  .snip1584 {
+    min-width: 50px;
+    max-width: 180px;
+  }
+  .snip1584 h3 {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    margin-bottom: 5px;
+  }
+  .snip1584 h5 {
+    // button inside the img!!
+    border-radius: 25px;
+    font-weight: normal;
+    background-color: #ae895d;
+    font-size: 8px;
+    padding: 3px 10px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
 }
