@@ -127,13 +127,23 @@ body {
     padding-left: 50px;
   }
   .snip1584 {
-    min-width: 50px;
-    max-width: 180px;
+    min-width: 120px;
+    max-width: 300px;
+    font-size: 10px;
+    margin: 5px;
+    width: 96%;
+  }
+  .snip1584:hover:before,
+  .snip1584.hover:before {
+    border-radius: 5px;
+    top: 60px; // inside hovering position from top !
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
   }
   .snip1584 h3 {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
@@ -145,6 +155,7 @@ body {
     // button inside the img!!
     border-radius: 25px;
     font-weight: normal;
+    text-align: center;
     background-color: #ae895d;
     font-size: 8px;
     padding: 3px 10px;
