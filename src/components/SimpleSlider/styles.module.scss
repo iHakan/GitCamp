@@ -121,8 +121,9 @@ body {
   color: white;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 667px) {
+@media only screen and (min-width: 200px) and (max-width: 799px) {
   .upComingsHeader {
+    margin: 0 auto;
     text-align: left;
     padding-left: 50px;
   }
@@ -130,19 +131,23 @@ body {
     min-width: 120px;
     max-width: 300px;
     font-size: 10px;
-    margin: 5px;
+    margin: 6px;
     width: 96%;
   }
-  .snip1584:hover:before,
-  .snip1584.hover:before {
+  //inside hovering the black background
+  .snip1584:before,
+  .snip1584:before {
     border-radius: 5px;
-    top: 60px; // inside hovering position from top !
+    top: 50px; // inside hovering position from top !
+    bottom: 0px;
+    left: 0;
+    right: 0;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
   }
   .snip1584 h3 {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
@@ -159,13 +164,19 @@ body {
     background-color: #ae895d;
     font-size: 8px;
     padding: 3px 10px;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
   }
+  .snip1584 h3,
+  .snip1584 h5 {
+    margin: 0;
+    opacity: 1;
+    letter-spacing: 1px;
+  }
 }
-@media only screen and (min-width: 668px) and (max-width: 1205px) {
+@media only screen and (min-width: 800px) and (max-width: 1205px) {
   .upComingsHeader {
     text-align: left;
     padding-left: 50px;
