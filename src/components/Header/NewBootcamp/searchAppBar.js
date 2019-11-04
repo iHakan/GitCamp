@@ -7,7 +7,7 @@ import { fade, makeStyles } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
 import FormNBC from "../Modal/modal";
 import Link from "@material-ui/core/Link";
-import stlyles from "./style.module.css";
+import style from "./style.module.css";
 import { Backpack } from "react-kawaii";
 import Cat from "react-kawaii/lib/es/components/cat/Cat";
 
@@ -75,14 +75,14 @@ export default function SearchAppBar() {
         }}
       >
         <Toolbar>
-          <Cat size={90} mood="blissful" color="#8f919b" />
+          <Cat size={60} mood="blissful" color="#8f919b" />
           <Typography
-            style={{ paddingLeft: 10, textAlign: "left" }}
+            style={{ paddingLeft: 10, textAlign: "left", marginRight: "0" }}
             className={classes.title}
             variant="h4"
             noWrap
           >
-            <a id="gitCamp" href="#">
+            <a className={style.gitCamp} href="#">
               GitCamp
             </a>
           </Typography>
@@ -105,21 +105,22 @@ export default function SearchAppBar() {
               </li>
             </ul>
           </div>
-          <div className="sectionLinks" />
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
+          <div className={style.searchSection}>
+            <div className={classes.search}>
+              <div className={classes.searchIcon}>
+                <SearchIcon />
+              </div>
+              <InputBase
+                placeholder="Search…"
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput
+                }}
+                inputProps={{ "aria-label": "search" }}
+              />
             </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput
-              }}
-              inputProps={{ "aria-label": "search" }}
-            />
           </div>
-          <div>
+          <div className={style.FormNBC}>
             <FormNBC />
           </div>
         </Toolbar>
