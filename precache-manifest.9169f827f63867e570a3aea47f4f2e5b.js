@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32246ed2cd2a75a918d6160a2b05e48e",
+    "revision": "25e750868eaf2c7931eb7acb5da151f6",
     "url": "/GitCamp/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GitCamp/static/css/2.634104c7.chunk.css"
   },
   {
-    "revision": "c053edd000d8684662f7",
-    "url": "/GitCamp/static/css/main.2f5cb012.chunk.css"
+    "revision": "ffbca9f441e4a3e082c7",
+    "url": "/GitCamp/static/css/main.e790eec4.chunk.css"
   },
   {
     "revision": "86a57d28c54bd50a5955",
     "url": "/GitCamp/static/js/2.6332f8c9.chunk.js"
   },
   {
-    "revision": "c053edd000d8684662f7",
-    "url": "/GitCamp/static/js/main.7d331a01.chunk.js"
+    "revision": "ffbca9f441e4a3e082c7",
+    "url": "/GitCamp/static/js/main.07b32b8d.chunk.js"
   },
   {
     "revision": "d59404dcc3ffb6a15436",
