@@ -130,7 +130,7 @@ export default function App() {
           fontWeight: "bold",
           color: "rgb(179, 179, 179)"
         }}
-        variant="h3"
+        variant="h4"
       >
         Location
       </Typography>

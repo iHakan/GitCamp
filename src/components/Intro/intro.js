@@ -11,7 +11,7 @@ class Intro extends React.Component {
         <SpeechBubble size={60} mood="happy" color="#83D1FB" />
         <Typography
           style={{ paddingTop: 10, fontWeight: "bolder", color: "#7a7a7a" }}
-          variant="h3"
+          variant="h4"
         >
           Who We Are ?
         </Typography>

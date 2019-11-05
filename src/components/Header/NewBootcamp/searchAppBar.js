@@ -83,7 +83,7 @@ export default function SearchAppBar() {
             noWrap
           >
             <a className={style.gitCamp} href="#">
-              GitCamp
+              Git<span className={style.gitCampSpan}>Camp!</span>
             </a>
           </Typography>
           <div className="menu-links">
