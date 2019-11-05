@@ -70,11 +70,11 @@ function Card({ children }) {
           (ref.current.offsetTop -
             (window.scrollY || window.pageYOffset || document.body.scrollTop));
 
-        const dampen = 50;
+        const dampen = 100;
         const xys = [
           -(y - ref.current.clientHeight / 2) / dampen,
           (x - ref.current.clientWidth / 2) / dampen,
-          1.07 // Scale
+          1.0 // Scale
         ];
 
         // Update values to animate to
@@ -164,8 +164,8 @@ const cards = [
     description:
       "We are big community. Thus, Our website can always be up-to-date. This is one of the most important things to continue life of our website.",
     image:
-      "https://refreshfinancial.ca/wp-content/themes/refresh/images/careers/top-img.png",
-    imageRatio: 839 / 1133
+      "https://www.eventtia.com/hs-fs/hubfs/Ilustratrion_newsite/Dedicated-Support-Team-illustration-op.gif?width=1500&name=Dedicated-Support-Team-illustration-op.gif",
+    imageRatio: 839 / 1180
   }
 ];
 
