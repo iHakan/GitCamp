@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee&display=swap");
+.boxIntro {
+  text-align: center;
+}
 p {
   font-family: "Handlee";
   font-size: 20px;

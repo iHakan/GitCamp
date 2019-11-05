@@ -118,7 +118,6 @@
 /* Demo purposes only */
 body {
   background-color: #f7f7f7;
-  text-align: center;
   color: white;
 }
 
@@ -153,8 +152,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    -webkit-transition-delay: 0.05s;
-    transition-delay: 0.05s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
     margin-bottom: 5px;
   }
   .snip1584 h5 {
@@ -172,7 +171,7 @@ body {
   }
   .snip1584 h3,
   .snip1584 h5 {
-    margin: 0;
+    margin: 3px;
     opacity: 1;
     letter-spacing: 1px;
   }
