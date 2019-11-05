@@ -70,7 +70,10 @@ class News extends React.Component {
       <div className={styles.upComingsHeader}>
         <Typography
           id="upComings"
-          style={{ paddingTop: 100, fontWeight: "bold" }}
+          style={{
+            paddingTop: 100,
+            fontWeight: "bold"
+          }}
           variant="h4"
         >
           Up Coming Bootcamps
