@@ -16,33 +16,13 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingBottom: 150
     },
     paper: {
+      marginTop: 30,
       height: 440,
       width: 240,
       padding: theme.spacing(5),
       textAlign: "center",
       color: theme.palette.text.secondary,
       borderRadius: 20
-    },
-
-    img: {
-      margin: "auto",
-      display: "block",
-      maxWidth: "100%",
-      maxHeight: "100%"
-    },
-    firstItem: {
-      marginTop: "100px",
-      marginLeft: "60px"
-    },
-    secondItem: {
-      marginTop: "50px",
-      marginLeft: "60px"
-    },
-    thirtyItem: {
-      marginTop: "50px"
-    },
-    fourthItem: {
-      marginTop: "100px"
     }
   })
 );
