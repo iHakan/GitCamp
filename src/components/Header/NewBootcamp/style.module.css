@@ -1,6 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
+.gitCamp {
+  font-family: cursive;
+}
+.gitCampSpan {
+  color: #6d9df1;
+}
 li {
   margin: 0 15px;
   list-style-type: none;
