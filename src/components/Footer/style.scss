@@ -12,7 +12,7 @@
 
 /* Footer left */
 
-.footer-distributed .footer-left {
+.footer-distributed .footer-right {
   float: left;
 }
 
@@ -75,11 +75,11 @@
 
 /* Footer Right */
 
-.footer-distributed .footer-right {
+.footer-distributed .footer-left {
   float: right;
 }
 
-.footer-distributed .footer-right p {
+.footer-distributed .footer-left p {
   display: inline-block;
   vertical-align: top;
   margin: 15px 42px 0 0;
@@ -170,14 +170,14 @@
     padding: 30px;
   }
 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
+  .footer-distributed .footer-right,
+  .footer-distributed .footer-left {
     float: none;
     max-width: 300px;
     margin: 0 auto;
   }
 
-  .footer-distributed .footer-left {
+  .footer-distributed .footer-right {
     margin-bottom: 40px;
   }
 

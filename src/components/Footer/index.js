@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.scss";
+import style from "./style.scss";
 import { Cat } from "react-kawaii";
 
 const Footer = () => {
@@ -7,19 +7,6 @@ const Footer = () => {
     <div id="footer-footer">
       <footer class="footer-distributed">
         <div class="footer-left">
-          <h3>
-            <span>
-              <Cat size={90} mood="excited" color="#8f919b" />
-            </span>
-            git<span>Camp !</span>
-          </h3>
-
-          <span class="footer-company-name">
-            Copyright &copy; 2019. All Rights Reserved.
-          </span>
-        </div>
-
-        <div class="footer-right">
           <p id="footer-contact">Contact Us</p>
 
           <form
@@ -30,6 +17,22 @@ const Footer = () => {
             <textarea name="message" placeholder="Message" />
             <button type="submit">Send</button>
           </form>
+        </div>
+        <br />
+        <br />
+        <div class="footer-right">
+          <h3>
+            <span>
+              <Cat size={60} mood="excited" color="#8f919b" />
+            </span>
+            <a href="#">
+              Git<span>Camp !</span>
+            </a>
+          </h3>
+
+          <span class="footer-company-name">
+            Copyright &copy; 2019. All Rights Reserved.
+          </span>
         </div>
       </footer>
     </div>
