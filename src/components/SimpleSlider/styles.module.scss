@@ -1,7 +1,9 @@
 .upComingsHeader {
-  text-align: left;
-  padding-left: 150px;
   color: rgb(179, 179, 179);
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 80%;
 }
 .snip1584 {
   position: relative;
@@ -118,20 +120,14 @@
 /* Demo purposes only */
 body {
   background-color: #f7f7f7;
-  text-align: center;
   color: white;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 799px) {
-  .upComingsHeader {
-    margin: 0 auto;
-    text-align: left;
-    padding-left: 50px;
-  }
   .snip1584 {
-    min-width: 120px;
-    max-width: 300px;
-    font-size: 10px;
+    min-width: 60px;
+    max-width: 100px;
+    font-size: 6px;
     margin: 6px;
     width: 96%;
   }
@@ -149,12 +145,12 @@ body {
   .snip1584 h3 {
     -webkit-transform: translateY(0%);
     transform: translateY(0%);
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    -webkit-transition-delay: 0.05s;
-    transition-delay: 0.05s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
     margin-bottom: 5px;
   }
   .snip1584 h5 {
@@ -163,7 +159,7 @@ body {
     font-weight: normal;
     text-align: center;
     background-color: #ae895d;
-    font-size: 8px;
+    font-size: 7px;
     padding: 3px 10px;
     -webkit-transform: translateY(10%);
     transform: translateY(10%);
@@ -172,16 +168,12 @@ body {
   }
   .snip1584 h3,
   .snip1584 h5 {
-    margin: 0;
+    margin: 3px;
     opacity: 1;
     letter-spacing: 1px;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1205px) {
-  .upComingsHeader {
-    text-align: left;
-    padding-left: 50px;
-  }
   .snip1584 {
     min-width: 120px;
     max-width: 300px;
