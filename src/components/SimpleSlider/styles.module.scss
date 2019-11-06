@@ -125,14 +125,12 @@ body {
 
 @media only screen and (min-width: 200px) and (max-width: 799px) {
   .snip1584 {
-    min-width: 60px;
-    max-width: 100px;
-    font-size: 6px;
-    margin: 6px;
+    margin: 5px;
     width: 96%;
   }
   //inside hovering the black background
-  .snip1584:before,
+  .snip1584.hover,
+  .snip1584:hover:before,
   .snip1584:before {
     border-radius: 5px;
     top: 50px; // inside hovering position from top !
@@ -145,7 +143,7 @@ body {
   .snip1584 h3 {
     -webkit-transform: translateY(0%);
     transform: translateY(0%);
-    font-size: 10px;
+
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
@@ -159,10 +157,9 @@ body {
     font-weight: normal;
     text-align: center;
     background-color: #ae895d;
-    font-size: 7px;
     padding: 3px 10px;
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
   }
@@ -173,7 +170,7 @@ body {
     letter-spacing: 1px;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1205px) {
+@media only screen and (min-width: 800px) and (max-width: 1248px) {
   .snip1584 {
     min-width: 120px;
     max-width: 300px;
@@ -181,13 +178,44 @@ body {
     margin: 5px;
     width: 96%;
   }
+  // To stabilize the hover background effect inside the slide!
+  /*.snip1584.hover,
   .snip1584:hover:before,
-  .snip1584.hover:before {
+  .snip1584:before {
     border-radius: 5px;
-    top: 60px; // inside hovering position from top !
+    top: 50px; // inside hovering position from top !
+    bottom: 0px;
+    left: 0;
+    right: 0;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
+  }*/
+
+  //h3, h5 is to control the inside stable effect!
+  /*.snip1584 h3 {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    margin-bottom: 5px;
   }
+  .snip1584 h5 {
+    // button inside the img!!
+    border-radius: 25px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #ae895d;
+
+    padding: 3px 10px;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }*/
+
   .snip1584 h3 {
     font-size: 16px;
     text-align: center;

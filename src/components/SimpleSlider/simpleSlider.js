@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import styles from "./styles.module.scss";
 import Container from "@material-ui/core/Container";
 import { Typography } from "@material-ui/core";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
 class MapFromApi extends React.Component {
   constructor() {
@@ -50,9 +49,19 @@ class News extends React.Component {
     var settings = {
       autoplay: true,
       dots: true,
+      swipeToSlide: true,
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      touchMove: true,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     };
     const data = this.props.data.documents;
     if (data.length > 0) {
