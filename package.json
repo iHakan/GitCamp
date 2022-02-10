@@ -13,7 +13,7 @@
     "kawaii": "0.0.1",
     "material-ui": "^1.0.0-beta.47",
     "mdbreact": "^4.19.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.9.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-addons-transition-group": "^15.6.2",
